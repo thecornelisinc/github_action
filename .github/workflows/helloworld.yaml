@@ -18,7 +18,7 @@ jobs:
       run:
         shell: bash
     steps: 
-    - name: checkout
+    - name: checkout main
       uses: actions/checkout@v4
 
     - name: Configure AWS Credentials using secret
