@@ -13,7 +13,7 @@ jobs:
   deploy: 
     name: Deploy new
     runs-on: ubuntu-latest
-    environment: production
+    environment: Development
     defaults:
       run:
         shell: bash
