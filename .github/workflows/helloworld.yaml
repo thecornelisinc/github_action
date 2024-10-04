@@ -1,5 +1,6 @@
 name: Deploy new ec2 Instance
-on:  [ push]
+on:  
+  push:
     # branches: [ $default-branch]
 
 env:
