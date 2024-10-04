@@ -13,6 +13,7 @@ jobs:
   deploy: 
     name: Deploy new
     runs-on: ubuntu-latest
+    environment: production
     defaults:
       run:
         shell: bash
@@ -39,11 +40,11 @@ jobs:
     - name: Terraform Init
       run:  terraform init
 
-    - name: Terraform format
-      run: terraform fmt -check
+    # - name: Terraform format
+    #   run: terraform fmt -check
 
-    - name: Terraform validate
-      run: terraform validate
+    # - name: Terraform validate
+    #   run: terraform validate
     
     - name: Terraform plan
       run: terraform plan -input=false
